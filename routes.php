@@ -17,10 +17,10 @@ function call($controller, $action) {
 }
 
 // we're adding an entry for the new controller and its actions
-$controllers = array(
+$controllers = [
     'pages' => ['home', 'error'],
     'posts' => ['index', 'show']
-);
+];
 
 if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {
@@ -31,4 +31,3 @@ if (array_key_exists($controller, $controllers)) {
 } else {
     call('pages', 'error');
 }
-?>

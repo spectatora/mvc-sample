@@ -9,4 +9,3 @@ if (isset($_GET['controller']) && isset($_GET['action'])) {
 }
 
 require_once('view/layout.php');
-?>
